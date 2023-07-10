@@ -2,6 +2,9 @@ import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useMediaQuery } from 'react-responsive'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import FeaturedProjects from '../components/FeauturedProjects'
 
 const NGIPage = () => {
   useEffect(() => {
@@ -16,17 +19,26 @@ const NGIPage = () => {
 
   return (
     <div className="flex flex-col items-center bg-gray-900 text-white min-h-screen">
+      <Navbar />
       <div
-        className="w-full h-1/2 bg-cover bg-top"
+        className="w-full bg-cover bg-top flex flex-col items-center justify-center text-center p-8"
         style={{
           backgroundImage: 'url(\'https://ngi.aimsites.nl/wp-content/uploads/2022/10/headerimage_ngi0_v4_8bit.png\')',
-          height: isDesktopOrLaptop ? '50vh' : '30vh'
+          height: isDesktopOrLaptop ? '45vh' : '30vh'
         }}
-      />
-      <div className="flex flex-col items-center justify-center flex-grow p-8 space-y-8">
-        <h1 className="text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500" data-aos="fade-up">
+      >
+        <h1 className="text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500 mb-4" data-aos="fade-up">
           Next Generation Internet
         </h1>
+        <h2 className="text-2xl font-semibold text-gray-200" data-aos="fade-up">
+          Accessible, inclusive & future proof projects
+        </h2>
+      </div>
+      <div className="flex flex-col items-center justify-center flex-grow p-8 space-y-8"
+        style={{
+          height: isDesktopOrLaptop ? '55vh' : '70vh'
+        }}
+      >
         <p className="text-xl text-center max-w-xl" data-aos="fade-up">
           Welcome to the Next Generation Internet platform, a futuristic hub for innovative projects. Students are encouraged to explore, request, and contribute to NGI-backed projects here. Get ready to immerse yourself in the new era of the internet!
         </p>
@@ -37,9 +49,11 @@ const NGIPage = () => {
           Explore Projects
         </button>
       </div>
-      <footer className="p-4 text-center bg-gray-800 text-gray-400">
-        © {new Date().getFullYear()} Next Generation Internet
-      </footer>
+      <div className="w-full bg-gray-800">
+        <FeaturedProjects />
+        <Footer />
+
+      </div>
     </div>
   )
 }
