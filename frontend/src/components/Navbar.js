@@ -21,7 +21,7 @@ const Navbar = () => {
   }, [])
 
   return (
-    <nav className={`flex items-center justify-between px-8 py-6 fixed w-full transition-all duration-500 ease-in-out ${navbarStyle} text-white z-50`}>
+    <nav className={`flex items-center justify-between px-8 py-6 w-full transition-all duration-500 ease-in-out ${navbarStyle} text-white `}>
       <div>
         <Link to="/" className="text-2xl font-bold">NGI</Link>
       </div>
