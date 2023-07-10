@@ -49,7 +49,7 @@ const NGIPage = () => {
           Explore Projects
         </button>
       </div>
-      <div className="w-full bg-gray-800">
+      <div className="w-full bg-HANGRIJS">
         <FeaturedProjects />
         <Footer />
 
