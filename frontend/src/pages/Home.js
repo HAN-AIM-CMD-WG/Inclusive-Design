@@ -24,7 +24,7 @@ const NGIPage = () => {
         className="w-full bg-cover bg-top flex flex-col items-center justify-center text-center p-8"
         style={{
           backgroundImage: 'url(\'https://ngi.aimsites.nl/wp-content/uploads/2022/10/headerimage_ngi0_v4_8bit.png\')',
-          height: isDesktopOrLaptop ? '45vh' : '30vh'
+          height: isDesktopOrLaptop ? '55vh' : '30vh'
         }}
       >
         <h1 className="text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500 mb-4" data-aos="fade-up">
