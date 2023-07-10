@@ -36,7 +36,7 @@ const NGIPage = () => {
       </div>
       <div className="flex flex-col items-center justify-center flex-grow p-8 space-y-8"
         style={{
-          height: isDesktopOrLaptop ? '55vh' : '70vh'
+          height: isDesktopOrLaptop ? '45vh' : '70vh'
         }}
       >
         <p className="text-xl text-center max-w-xl" data-aos="fade-up">
@@ -49,7 +49,7 @@ const NGIPage = () => {
           Explore Projects
         </button>
       </div>
-      <div className="w-full bg-gray-800">
+      <div className="w-full bg-white ">
         <FeaturedProjects />
         <Footer />
 

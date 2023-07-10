@@ -20,7 +20,7 @@ const FeaturedProjects = () => {
   ]
 
   return (
-    <div className="p-8 space-y-8 bg-gray-800">
+    <div className="p-8 space-y-8">
       <h2 className="text-3xl font-semibold text-center text-white" data-aos="fade-up">
         Featured Projects
       </h2>
