@@ -6,6 +6,7 @@ import CountUp from 'react-countup' // Import the React CountUp library
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import FeaturedProjects from '../components/FeaturedProjects'
+import NewsSection from '../components/NewsSection'
 import '../css/home.css'
 
 const NGIPage = () => {
@@ -42,8 +43,7 @@ const NGIPage = () => {
       <div
         className="w-full flex flex-col justify-center text-left p-8 relative"
         style={{
-          height: isDesktopOrLaptop ? '55vh' : '50vh',
-          minHeight: '300px' // Set a minimum height for smaller screens
+          height: isDesktopOrLaptop ? '55vh' : '50vh'
         }}
       >
         <div
@@ -72,7 +72,7 @@ const NGIPage = () => {
       <div
         className="flex flex-col items-center justify-center flex-grow p-8 space-y-8 bg-gray-900 w-full text-white"
         style={{
-          minHeight: '300px' // Set a minimum height for smaller screens
+          height: isDesktopOrLaptop ? '45vh' : '50vh'
         }}
       >
         <div className="text-center max-w-xl" data-aos="fade-up">
@@ -91,7 +91,7 @@ const NGIPage = () => {
         </button>
 
         {/* Stats Counter */}
-        <div className="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-4">
+        <div className="flex flex-wrap justify-center space-x-4">
           <div className="text-center">
             <h3 className="text-3xl md:text-4xl font-bold">
               <CountUp end={projectCount} duration={2} separator="," />
@@ -107,8 +107,10 @@ const NGIPage = () => {
         </div>
         {/* End of Stats Counter */}
       </div>
-
+      <NewsSection />
+      <div className='bg-gray-100'>
       <FeaturedProjects />
+      </div>
       <div className="mt-10 w-full">
         <Footer />
       </div>
