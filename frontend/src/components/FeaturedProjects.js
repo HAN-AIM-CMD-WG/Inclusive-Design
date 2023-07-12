@@ -29,8 +29,8 @@ const FeaturedProjects = () => {
   ]
 
   return (
-    <div className="p-8 space-y-8 w-full rounded-lg ">
-      <h2 className="text-3xl font-semibold text-center text-black">
+    <div className="p-8 space-y-8 rounded-lg ">
+      <h2 className="text-4xl font-semibold text-center text-pink-600">
         Featured Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up">
