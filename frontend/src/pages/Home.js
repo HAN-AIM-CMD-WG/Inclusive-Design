@@ -49,11 +49,11 @@ const NGIPage = () => {
           Explore Projects
         </button>
       </div>
-      <div className="w-full bg-white ">
         <FeaturedProjects />
-        <Footer />
 
-      </div>
+        <div className='mt-10'>
+        <Footer />
+        </div>
     </div>
   )
 }
