@@ -5,6 +5,7 @@ import { useMediaQuery } from 'react-responsive'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import FeaturedProjects from '../components/FeauturedProjects'
+import { Link } from 'react-router-dom'
 
 const NGIPage = () => {
   useEffect(() => {
@@ -42,12 +43,14 @@ const NGIPage = () => {
         <p className="text-xl text-center max-w-xl" data-aos="fade-up">
           Welcome to the Next Generation Internet platform, a futuristic hub for innovative projects. Students are encouraged to explore, request, and contribute to NGI-backed projects here. Get ready to immerse yourself in the new era of the internet!
         </p>
+        <Link to="/projects">
         <button
           className="px-8 py-3 text-xl font-semibold bg-pink-700 hover:bg-pink-600 transition-colors duration-200"
           data-aos="fade-up"
         >
           Explore Projects
         </button>
+        </Link>
       </div>
       <div className="w-full bg-HANGRIJS">
         <FeaturedProjects />
