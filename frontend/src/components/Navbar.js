@@ -50,16 +50,17 @@ const Navbar = () => {
           </button>
           <button className="flex items-center justify-center rounded-full px-6 py-3 transition duration-300 ease-in-out hover:bg-pink-700 hover:shadow">
             <FontAwesomeIcon icon={faHistory} className="text-2xl text-gray-300" />
-            <span className="ml-3 font-medium text-base text-gray-300">History</span>
+            <span className="ml-3 font-medium text-base text-gray-300">Projects</span>
           </button>
           <button className="flex items-center justify-center rounded-full px-6 py-3 transition duration-300 ease-in-out hover:bg-pink-700 hover:shadow">
             <FontAwesomeIcon icon={faImage} className="text-2xl text-gray-300" />
-            <span className="ml-3 font-medium text-base text-gray-300">Gallery</span>
+            <span className="ml-3 font-medium text-base text-gray-300">Students</span>
           </button>
           <button className="flex items-center justify-center rounded-full px-6 py-3 transition duration-300 ease-in-out hover:bg-pink-700 hover:shadow">
             <FontAwesomeIcon icon={faBroadcastTower} className="text-2xl text-gray-300" />
-            <span className="ml-3 font-medium text-base text-gray-300">Live</span>
+            <span className="ml-3 font-medium text-base text-gray-300">About Us</span>
           </button>
+
         </div>
       </div>
       <div className="md:flex items-center mt-3 md:mt-0 hidden md:block">
@@ -83,15 +84,15 @@ const Navbar = () => {
           </button>
           <button className="flex items-center justify-center rounded-full px-6 py-3 transition duration-300 ease-in-out hover:bg-pink-700 hover:shadow w-full">
             <FontAwesomeIcon icon={faHistory} className="text-2xl text-gray-300" />
-            <span className="ml-3 font-medium text-base text-gray-300">History</span>
+            <span className="ml-3 font-medium text-base text-gray-300">Projects</span>
           </button>
           <button className="flex items-center justify-center rounded-full px-6 py-3 transition duration-300 ease-in-out hover:bg-pink-700 hover:shadow w-full">
             <FontAwesomeIcon icon={faImage} className="text-2xl text-gray-300" />
-            <span className="ml-3 font-medium text-base text-gray-300">Gallery</span>
+            <span className="ml-3 font-medium text-base text-gray-300">Students</span>
           </button>
           <button className="flex items-center justify-center rounded-full px-6 py-3 transition duration-300 ease-in-out hover:bg-pink-700 hover:shadow w-full">
             <FontAwesomeIcon icon={faBroadcastTower} className="text-2xl text-gray-300" />
-            <span className="ml-3 font-medium text-base text-gray-300">Live</span>
+            <span className="ml-3 font-medium text-base text-gray-300">About Us</span>
           </button>
           <button className="flex items-center justify-center rounded-full px-6 py-3 transition duration-300 ease-in-out hover:bg-gray-700 hover:shadow w-full mt-4">
             <FontAwesomeIcon icon={faCog} className="text-2xl text-gray-300" />
