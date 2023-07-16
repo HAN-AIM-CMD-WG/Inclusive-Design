@@ -109,9 +109,11 @@ const NGIPage = () => {
         </div>
         {/* End of Stats Counter */}
       </div>
-      <NewsSection />
-      <div className='bg-gray-100'>
       <FeaturedProjects />
+
+      <div className='bg-gray-100'>
+      <NewsSection />
+
       </div>
       <div className="mt-10 w-full">
         <Footer />
