@@ -28,7 +28,7 @@ const Profile = () => {
           <h1 className="mt-4 text-center text-xl font-semibold">{profile.name}</h1>
           <p className="mt-2 text-center text-sm text-gray-600">{profile.intro}</p>
           <h2 className="mt-6 text-lg font-semibold">Badges</h2>
-          <div className="mt-4 flex justify-around">
+          <div className="mt-4 flex justify-center space-x-4">
             {badges.map((badge, index) => (
               <div key={index} className="p-2 bg-pink-700 text-white rounded-full flex items-center">
                 <FaTrophy />
@@ -37,7 +37,7 @@ const Profile = () => {
             ))}
           </div>
           <h2 className="mt-6 text-lg font-semibold">Skills</h2>
-          <div className="mt-2 flex flex-wrap justify-around">
+          <div className="mt-2 flex flex-wrap justify-center space-x-4">
             {skills.map((skill, index) => (
               <span key={index} className="m-1 bg-pink-700 text-white rounded px-2 py-1 hover:bg-pink-600 transition duration-200 cursor-pointer">{skill}</span>
             ))}
