@@ -39,7 +39,9 @@ const NGIPage = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
+      <Navbar
+      customClass={'w-full z-50 absolute '}
+      />
       <div
         className="w-full flex flex-col justify-center text-left p-8 relative"
         style={{

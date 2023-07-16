@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 // Navbar.js
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({ customClass }) => {
   return (
-        <nav className="flex items-center justify-between p-6 bg-gray-800 text-white">
+        <nav className={`flex items-center justify-between p-6 bg-gray-800 text-white ${customClass}`}>
             <div>
                 <a href="/" className="text-xl font-bold">LOGO</a>
             </div>
