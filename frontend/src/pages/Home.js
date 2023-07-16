@@ -8,6 +8,7 @@ import Footer from '../components/Footer'
 import FeaturedProjects from '../components/FeaturedProjects'
 import NewsSection from '../components/NewsSection'
 import '../css/home.css'
+import { Link } from 'react-router-dom'
 
 const NGIPage = () => {
   useEffect(() => {
@@ -85,14 +86,14 @@ const NGIPage = () => {
             A futuristic hub for innovative projects. Students are encouraged to explore, request, and contribute to NGI-backed projects here. Get ready to immerse yourself in the new era of the internet!
           </p>
         </div>
-        <button
-          className="px-8 py-3 text-lg md:text-xl font-semibold bg-pink-700 hover:bg-pink-600 transition-all duration-200 transform hover:scale-105"
-          data-aos="fade-up"
-        >
-          Explore Projects
-        </button>
-
-        {/* Stats Counter */}
+        <Link to="/projects">
+          <button
+            className="px-8 py-3 text-lg md:text-xl font-semibold bg-pink-700 hover:bg-pink-600 transition-all duration-200 transform hover:scale-105"
+            data-aos="fade-up"
+          >
+            Explore Projects
+          </button>
+        </Link>
         <div className="flex flex-wrap justify-center space-x-4">
           <div className="text-center">
             <h3 className="text-3xl md:text-4xl font-bold">
@@ -107,7 +108,6 @@ const NGIPage = () => {
             <p className="text-lg">Students</p>
           </div>
         </div>
-        {/* End of Stats Counter */}
       </div>
       <FeaturedProjects />
 
