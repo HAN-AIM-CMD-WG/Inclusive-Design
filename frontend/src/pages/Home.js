@@ -3,7 +3,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useMediaQuery } from 'react-responsive'
 import CountUp from 'react-countup' // Import the React CountUp library
-import Navbar from '../components/Navbar'
+import Navbar from '../components/SecNavbar'
 import Footer from '../components/Footer'
 import FeaturedProjects from '../components/FeaturedProjects'
 import NewsSection from '../components/NewsSection'
