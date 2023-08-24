@@ -9,7 +9,7 @@ const Navbar = ({ customClass }) => {
                 <a href="/" className="text-xl font-bold">LOGO</a>
             </div>
             <div className="space-x-4">
-                <button className="bg-pink-700 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-200">Start een project</button>
+                <a href="/createproject" className="bg-pink-700 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-200">Start een project</a>
                 <a href="/projects" className="hover:text-green-500 transition duration-200">Projects</a>
             </div>
             <div className="space-x-4">
