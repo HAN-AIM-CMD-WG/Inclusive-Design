@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 // import { useMediaQuery } from 'react-responsive'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/SecNavbar'
 import Footer from '../components/Footer'
 import Projects from '../components/Projects'
 import ProjectData from '../data/ProjectData'
@@ -33,11 +33,11 @@ const NGIProjects = () => {
       <Navbar />
 
       <div className='flex'>
-        <div className='w-1/6'>
+        <div className='w-1/6 p-2'>
 
-          <div className="px-5 grid content-center border border-gray-700 rounded-lg">
+          <div className="p-5 h-full grid content-start border border-gray-700 rounded-lg">
             {/* filter for title */}
-            <form className="pt-5">
+            <form className="">
               <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -52,25 +52,26 @@ const NGIProjects = () => {
 
             {/* select for theme */}
             <label className="font-medium text-center block mb-2">thema</label>
-            <select className="bg-HANGRIJS font-medium text-center border-2 border-gray-600 rounded-e-full" onChange={e => setTheme(e.target.value)}>
-              <option value="" disabled default selected>selecteer thema</option>
+            <select className="bg-HANGRIJS font-medium text-center border-2 border-gray-600 rounded-e-full mb-4" onChange={e => setTheme(e.target.value)}>
+              <option value="" default selected>selecteer thema</option>
               {themes.map(theme => {
                 return <option key={theme}>{theme}</option>
               })}
             </select>
-            {/* filter voor hoeveelheid deelnemers */}
 
+            {/* filter voor hoeveelheid deelnemers */}
             <label className="font-medium text-center block mb-2">aantal deelnemers</label>
-            <select multiple id="participants_multi" className="bg-HANGRIJS font-medium text-center border-2 border-gray-600 rounded-e-full overflow-hidden" size={participants.length + 1} onChange={e => setTheme(e.target.value)}>
-              <option value="" disabled default selected>aantal deelnemers nodig</option>
+            <select className="bg-HANGRIJS font-medium text-center border-2 border-gray-600 overflow-hidden" onChange={e => setTheme(e.target.value)}>
+              <option value="" default selected>aantal deelnemers nodig</option>
               {participants.map(participant => {
                 return <option key={participant}>{participant}</option>
               })}
             </select>
+
             {/* filter voor gezochte expertises */}
             <label className="font-medium text-center block mb-2">expertises</label>
             <select className="bg-HANGRIJS font-medium text-center border-2 border-gray-600 rounded-e-full">
-              <option value="" disabled default selected>filter op gewenste expertise</option>
+              <option value="" default selected>gewenste expertise</option>
               {expertises.map(expertise => {
                 return <option key={expertise}>{expertise}</option>
               })}
