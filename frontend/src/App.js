@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Profile from './pages/Profile'
-import CreateProject from './pages/CreateProject'
+import ProfileInfo from './pages/ProfileInfo'
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/createproject" element={<CreateProject />} />
+        <Route path="/ProfileInfo" element={<ProfileInfo />} />
       </Routes>
     </BrowserRouter>
   )

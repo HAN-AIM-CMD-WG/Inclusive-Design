@@ -1,13 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaTrophy, FaGithub } from 'react-icons/fa'
 import Navbar from '../components/SecNavbar'
 
 const Profile = () => {
+  // fetch data for Github information
+  const [githubData, setGithubData] = useState([])
+  const [githubUser] = useState('jveldmaat') // <- hierin kun je later informatie toevoegen over geladen gebruiker
+
+  const fetchData = () => {
+    return fetch(`https://api.github.com/users/${githubUser}`)
+      .then((response) => response.json())
+      .then((response) => setGithubData(response))
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [])
+
   const profile = {
-    name: 'John Doe',
-    image: 'https://randomuser.me/api/portraits/men/75.jpg',
-    intro: 'A dedicated web developer with a passion for JavaScript...',
-    github: 'https://github.com/johndoe'
+    name: githubData.name,
+    image: githubData.avatar_url,
+    location: githubData.location,
+    intro: githubData.bio,
+    github: githubData.html_url
   }
   const badges = ['Gold', 'Silver', 'Bronze']
   const skills = ['JavaScript', 'React', 'Tailwind CSS']
@@ -32,7 +47,8 @@ const Profile = () => {
                 <img className="w-32 h-32 object-cover rounded-full border-4 border-indigo-500 shadow" src={profile.image} alt={profile.name} />
                 <div className="flex-1">
                     <h1 className="text-2xl font-bold text-gray-700">{profile.name}</h1>
-                    <p className="text-gray-500 mt-2">{profile.intro}</p>
+                    <p className="text-gray-500 mt-2">Bio: {profile.intro}</p>
+                    <p className="text-gray-500 mt-2">Omgeving: {profile.location}</p>
                     <a className="mt-2 text-indigo-500 hover:text-indigo-700 flex items-center space-x-2" href={profile.github} target="_blank" rel="noopener noreferrer">
                         <FaGithub />
                         <span>GitHub</span>
