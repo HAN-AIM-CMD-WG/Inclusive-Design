@@ -1,7 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react'
 import Navbar from '../components/SecNavbar'
-import { FaGithub } from 'react-icons/fa'
+import {
+  FaGithub,
+  FaSchool
+} from 'react-icons/fa'
 
 const LoginPage = () => {
   const [credentials, setCredentials] = useState({
@@ -26,6 +29,10 @@ const LoginPage = () => {
     window.location.href = 'http://localhost:4000/auth/github'
   }
 
+  const handleHANLogin = () => {
+    window.location.href = 'http://localhost:4000/auth/han'
+  }
+
   return (
     <div className="flex flex-col min-h-screen bg-gray-900">
       {/* Your Navbar component here */}
@@ -42,12 +49,17 @@ const LoginPage = () => {
           >
             <FaGithub className="mr-2" /> Login with GitHub
           </button>
+          <button
+            className="w-full p-2 bg-pink-700 text-white rounded hover:bg-pink-800 focus:outline-none focus:bg-gray-700 mb-4 flex justify-center items-center"
+            onClick={handleHANLogin}
+          >
+            <FaSchool className="mr-2" />
+            Login with HAN
+          </button>
           <div className="mb-4 text-center">
             <span className="text-gray-900">Or continue with email</span>
           </div>
-          {/* <h1 className="text-2xl font-bold mb-8 text-center text-gray-900">
-            Login
-          </h1> */}
+
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
