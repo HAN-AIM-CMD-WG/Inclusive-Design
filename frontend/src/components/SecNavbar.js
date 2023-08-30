@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 // Navbar.js
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = ({ customClass }) => {
   return (
@@ -9,7 +10,7 @@ const Navbar = ({ customClass }) => {
                 <a href="/" className="text-xl font-bold">LOGO</a>
             </div>
             <div className="space-x-4">
-                <button className="bg-pink-700 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-200">Start een project</button>
+                <Link to="/create-project" className="bg-pink-700 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-200">Start een project</Link>
                 <a href="/projects" className="hover:text-green-500 transition duration-200">Projects</a>
             </div>
             <div className="space-x-4">

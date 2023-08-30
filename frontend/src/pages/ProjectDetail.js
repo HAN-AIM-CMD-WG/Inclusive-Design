@@ -15,7 +15,7 @@ const ProjectDetailPage = () => {
         id: '1',
         title: 'Project 1',
         fullDescription: 'Detailed information about Project 1...',
-        imageUrl: 'https://placeimg.com/640/480/tech',
+        imageUrl: 'https://ngi.aimsites.nl/wp-content/uploads/2022/10/headerimage_ngi0_v4_8bit.png',
         author: 'John Doe',
         teamMembers: ['Alice', 'Bob', 'Charlie'],
         completion: 60,

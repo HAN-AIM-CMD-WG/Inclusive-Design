@@ -1,12 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaTrophy } from 'react-icons/fa'
 import Navbar from '../components/SecNavbar'
 
 const Profile = () => {
+  // fetch data for Github information
+  const [githubData, setGithubData] = useState([])
+  const [githubUser] = useState('jveldmaat') // <- hierin kun je later informatie toevoegen over geladen gebruiker
+
+  const fetchData = () => {
+    return fetch(`https://api.github.com/users/${githubUser}`)
+      .then((response) => response.json())
+      .then((response) => setGithubData(response))
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [])
+
   const profile = {
-    name: 'John Doe',
-    image: 'https://randomuser.me/api/portraits/men/75.jpg',
-    intro: 'A dedicated web developer with a passion for JavaScript...'
+    name: githubData.name,
+    image: githubData.avatar_url,
+    location: githubData.location,
+    intro: githubData.bio,
+    github: githubData.html_url
   }
   const badges = ['Gold', 'Silver', 'Bronze']
   const skills = ['JavaScript', 'React', 'Tailwind CSS']
