@@ -1,7 +1,5 @@
 # Inclusive-Design
 
-***
-
 ## Inhoud
 - [**Inleiding**](#Inleiding)
 - [**Rollen**](#Rollen)
