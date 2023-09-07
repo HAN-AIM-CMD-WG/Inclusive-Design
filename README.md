@@ -7,9 +7,11 @@
 
 ## Inleiding
 
-<p>Welkom bij de codebase van het projectplatform voor NGI en leuk dat je graag mee wilt helpen met het bouwen van <br> functionaliteiten binnen dit project</p>
+<p>Welkom bij de codebase van het projectplatform voor NGI en leuk dat je graag mee wilt helpen met het bouwen van functionaliteiten binnen dit project.</p>
 
-<p>In de codebase werken wij continue aan verbeteringen, nieuwe features</p>
+<p>In de codebase werken wij continue aan verbeteringen, nieuwe features en het beter beveiligen van het systeem.</p>
+
+<p>De website wordt ontworpen op basis van een design dat eerder op <a href="https://xd.adobe.com/view/2dfdb95f-c573-4d3a-65ad-54fff476ef62-5bcc/">Blueprint</a>. Als je de link aanklikt en volgt zie je de verschillende raam ontwerpen voor de pagina's. </p>
 
 ## Rollen
 
